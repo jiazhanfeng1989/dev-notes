@@ -2,11 +2,11 @@
 id: 68krwv07d88e4730egwsui9
 title: Git
 desc: ''
-updated: 1747393092202
+updated: 1747531371732
 created: 1747391620429
 ---
 
-## Common Git Operations
+## Description
 
 This section contains frequently used Git commands for daily development workflow. Each command includes:
 - Purpose and usage
