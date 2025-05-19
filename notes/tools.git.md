@@ -2,7 +2,7 @@
 id: 68krwv07d88e4730egwsui9
 title: Git
 desc: ''
-updated: 1747540236138
+updated: 1747622269568
 created: 1747391620429
 ---
 
@@ -215,4 +215,12 @@ git commit -m "Update submodule to <commit-hash/branch>"
 // Remove branch not exist on the remote
 1. git fetch --prune
 2. git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -D
+
+
+//Init local brach to remote
+1. git init
+2. git add .
+3. git commit -m "Initial commit"
+4. git remote add origin git@github.com:user/repo.git
+5. git push -u origin main
 ```
