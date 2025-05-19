@@ -1,8 +1,35 @@
-# Description ![Maintenance](https://img.shields.io/badge/maintained-yes-green)
-A knowledge base containing practical development notes, solutions, and best practices gathered during day-to-day programming work.
+# Dev Notes ![Maintenance](https://img.shields.io/badge/maintained-yes-green) ![VSCode](https://img.shields.io/badge/VSCode-Ready-blue)
 
+> In my spare time, I discovered a great note-taking combo: VSCode + Dendron. I'm using it to reorganize my scattered development knowledge base into something more structured and manageable.
 
-## Development Environment
-This project is developed using [vscode](https://code.visualstudio.com/docs) + [dendron](https://www.dendron.so/) for efficient note-taking and knowledge management.
+## 🎯 About
+This repository serves as my personal development knowledge base, will capture various aspects of software development:
+- Programming best practices
+- Technical solutions and troubleshooting
+- Development workflows
+- Code snippets and examples
+- Project experiences and learnings
 
-[dev-note](./notes/root.md)
+## 🛠 Development Environment
+- [VSCode](https://code.visualstudio.com/docs) - Powerful source code editor
+- [Dendron](https://www.dendron.so/) - Hierarchical note-taking & knowledge management
+- [Markdown](https://www.markdownguide.org/) - Documentation format
+
+## 📚 Knowledge Structure
+Browse through different topics:
+- `programming` - Languages and frameworks
+- `devops` - Operations and deployment
+- `architecture` - System design patterns
+- `tools` - Development utilities
+
+## 🚀 Getting Started
+1. Install VSCode
+2. Install Dendron extension
+3. Clone this repository
+4. Open workspace in VSCode
+5. Start exploring notes
+
+[Start Reading](./notes/root.md)
+
+## License
+MIT
