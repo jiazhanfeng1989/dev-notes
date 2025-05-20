@@ -29,6 +29,21 @@ Browse through different topics:
 4. Open workspace in VSCode
 5. Start exploring notes
 
+## 💡 Publish as a local web server
+1. npx dendron publish init
+```
+# you should see the following output
+🌱 checking if .next directory exists.
+🌱 .next directory does not exist
+🌱 Initializing NextJS template.
+🌱 Successfully cloned.
+🌱 All dependencies installed.
+```
+2. npx dendron publish dev
+3. Visit http://localhost:3000 to access your site.
+
+![demo](./notes/assets/demo.gif)
+
 [Start Reading](./notes/root.md)
 
 ## License
