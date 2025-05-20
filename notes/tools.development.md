@@ -2,7 +2,7 @@
 id: rtfdesquzcnb6ij46t35xpx
 title: Development
 desc: 'Daily development tools'
-updated: 1747724737642
+updated: 1747732578672
 created: 1747651595871
 ---
 # Description
@@ -55,3 +55,6 @@ These tools have proven to enhance productivity and solve specific development c
 ```
 ffmpeg -i input.mov -vf "fps=10,scale=800:-1:flags=lanczos" output.gif
 ```
+
+## Windows Process Explorer
+[Windows Process Explorer](https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer)

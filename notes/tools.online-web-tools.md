@@ -2,7 +2,7 @@
 id: nuj2ok2ws9pv402e9l4yqhd
 title: Online Web Tools
 desc: 'Useful online web tools'
-updated: 1747650236751
+updated: 1747732810159
 created: 1747649390594
 ---
 
@@ -32,8 +32,10 @@ created: 1747649390594
 
 [geogebra](https://www.geogebra.org/graphing?lang=zh_CN)
 
-[online tools collector](https://tool.lu/)
+[online tools collector](https://tool.lu)
 
 [online proxy pac file test](https://thorsenlabs.com/pac)
+
+[Groovy Web Console](https://gwc-experiment.appspot.com/#o5fCgfY5P2)
 
 
