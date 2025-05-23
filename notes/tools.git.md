@@ -2,7 +2,7 @@
 id: 68krwv07d88e4730egwsui9
 title: Git
 desc: ''
-updated: 1747622269568
+updated: 1747997542944
 created: 1747391620429
 ---
 
@@ -210,8 +210,16 @@ git add lib/sub-project
 git commit -m "Update submodule to <commit-hash/branch>"
 ```
 
+## Git rm command
+``` git
+// Remove file from index and working directory
+git rm <file>
+
+// Remove file from index only (keep in working directory)
+git rm --cached <file>
+```
 ## Git commands combination
-``` git 
+``` git
 // Remove branch not exist on the remote
 1. git fetch --prune
 2. git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -D
