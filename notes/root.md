@@ -2,7 +2,7 @@
 id: tne5azm95dq4o7qydgghpd1
 title: Development Notes
 desc: ''
-updated: 1748598346558
+updated: 1749721385148
 created: 1747390979181
 ---
 # Development Notes Collection
@@ -22,3 +22,5 @@ Use the hierarchical structure to browse through different topics:
 - `Architecture` - System design and architecture patterns
 - `Tools` - Development tools and utilities
 - `Global Network Access` - Global network access and configuration
+
+[Graph View](./assets/graph.html)

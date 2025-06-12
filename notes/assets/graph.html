@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dendron Graph</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: white;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    #cy {
+      width: 100vw;
+      height: 100vh;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div id="cy"></div>
+
+  <!-- Cytoscape.js CDN -->
+  <script src="https://unpkg.com/cytoscape@3.24.0/dist/cytoscape.min.js"></script>
+
+  <!-- Graph JSON 引入 -->
+  <script>
+    // ⚠️ 替换为你的实际路径
+    fetch('graph.json')
+      .then(res => res.json())
+      .then(data => {
+        const cy = cytoscape({
+          container: document.getElementById('cy'),
+          elements: data,
+          layout: {
+            name: 'cose',
+            animate: true,
+            nodeDimensionsIncludeLabels: true,
+            refresh: 20,
+            fit: true,
+            padding: 30,
+            randomize: false,
+            componentSpacing: 100,
+            nodeRepulsion: 400000,
+            nodeOverlap: 10,
+            idealEdgeLength: 100,
+            edgeElasticity: 100,
+            nestingFactor: 5,
+            gravity: 80
+          },
+          style: [
+            {
+              selector: 'node',
+              style: {
+                'label': 'data(label)',
+                'text-valign': 'bottom',
+                'text-halign': 'center',
+                'color': '#ffffff',
+                'background-color': '#454545',
+                'text-margin-y': 5,
+                'font-size': '12px',
+                'width': '10',
+                'height': '10',
+                'text-outline-width': 0,
+                'text-outline-opacity': 0
+              }
+            },
+            {
+              selector: 'node[isRoot = "true"]',
+              style: {
+                'width': '12',
+                'height': '12',
+                'background-color': '#666666',
+                'font-weight': 'bold'
+              }
+            },
+            {
+              selector: 'edge',
+              style: {
+                'width': 0.8,
+                'line-color': '#444444',
+                'target-arrow-color': '#444444',
+                'curve-style': 'straight',
+                'target-arrow-shape': 'none',
+                'opacity': 0.6
+              }
+            }
+          ]
+        });
+
+        // 点击跳转到 /notes/{id}
+        cy.on('tap', 'node', function (evt) {
+          const url = evt.target.data('url');
+          if (url) {
+            window.open(url, '_blank');
+          }
+        });
+      });
+  </script>
+</body>
+</html>

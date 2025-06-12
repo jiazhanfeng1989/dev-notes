@@ -1,0 +1,260 @@
+{
+  "nodes": [
+    {
+      "data": {
+        "id": "devops.c++.boost",
+        "label": "Boost",
+        "url": "/notes/i436wgdh2hvjlals4wdk1r6"
+      }
+    },
+    {
+      "data": {
+        "id": "devops.c++",
+        "label": "C++",
+        "url": "/notes/ffmkd9kze91k46hwei97kyp"
+      }
+    },
+    {
+      "data": {
+        "id": "devops.changelog-template",
+        "label": "Changelog Template",
+        "url": "/notes/oshs6bzntb6bgoenrtrl5pg"
+      }
+    },
+    {
+      "data": {
+        "id": "devops.clangformat-template",
+        "label": "Clang Format Template",
+        "url": "/notes/7zha1702rosm03dko2f2u9g"
+      }
+    },
+    {
+      "data": {
+        "id": "devops.https",
+        "label": "HTTPS",
+        "url": "/notes/ymrymrablwxty4wj32guzwv"
+      }
+    },
+    {
+      "data": {
+        "id": "devops",
+        "label": "Devops",
+        "url": "/notes/btua98bl5qwvburfb8ebcu6"
+      }
+    },
+    {
+      "data": {
+        "id": "globalaccess.activations",
+        "label": "Activations",
+        "url": "/notes/ixifnst1rmziu8pwpt3vwc8"
+      }
+    },
+    {
+      "data": {
+        "id": "globalaccess",
+        "label": "Globalaccess",
+        "url": "/notes/su75o63vsym6nnc48qx97rc"
+      }
+    },
+    {
+      "data": {
+        "id": "globalaccess.network",
+        "label": "Network",
+        "url": "/notes/iuoqqw1cg9yijbpy5u58rwb"
+      }
+    },
+    {
+      "data": {
+        "id": "root",
+        "label": "Root",
+        "url": "/"
+      }
+    },
+    {
+      "data": {
+        "id": "tools.chrome-extensions",
+        "label": "Chrome Extensions",
+        "url": "/notes/ktor4obcnpvd185zbi1hkxl"
+      }
+    },
+    {
+      "data": {
+        "id": "tools.curl",
+        "label": "Curl",
+        "url": "/notes/kponeoars1ghp0o6oa1ht2z"
+      }
+    },
+    {
+      "data": {
+        "id": "tools.development",
+        "label": "Development",
+        "url": "/notes/rtfdesquzcnb6ij46t35xpx"
+      }
+    },
+    {
+      "data": {
+        "id": "tools.git",
+        "label": "Git",
+        "url": "/notes/68krwv07d88e4730egwsui9"
+      }
+    },
+    {
+      "data": {
+        "id": "tools.markdown",
+        "label": "Markdown",
+        "url": "/notes/jizqzuh8dahnb6x9w5ag10g"
+      }
+    },
+    {
+      "data": {
+        "id": "tools",
+        "label": "Tools",
+        "url": "/notes/xi57ty9m2ox0zxv8an01yw2"
+      }
+    },
+    {
+      "data": {
+        "id": "tools.online-web-tools",
+        "label": "Online Web Tools",
+        "url": "/notes/nuj2ok2ws9pv402e9l4yqhd"
+      }
+    },
+    {
+      "data": {
+        "id": "tools.uv",
+        "label": "Uv",
+        "url": "/notes/zm1ggni3j9lzfk4jr8skae0"
+      }
+    },
+    {
+      "data": {
+        "id": "tools.vim",
+        "label": "Vim",
+        "url": "/notes/qn1kf0wx67e9u8wzfhyz2px"
+      }
+    },
+    {
+      "data": {
+        "id": "tools.vscode",
+        "label": "Vscode",
+        "url": "/notes/srekil65jvjy632gi69fayo"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "data": {
+        "source": "devops.c++",
+        "target": "devops.c++.boost"
+      }
+    },
+    {
+      "data": {
+        "source": "devops",
+        "target": "devops.c++"
+      }
+    },
+    {
+      "data": {
+        "source": "devops",
+        "target": "devops.changelog-template"
+      }
+    },
+    {
+      "data": {
+        "source": "devops",
+        "target": "devops.clangformat-template"
+      }
+    },
+    {
+      "data": {
+        "source": "devops",
+        "target": "devops.https"
+      }
+    },
+    {
+      "data": {
+        "source": "root",
+        "target": "devops"
+      }
+    },
+    {
+      "data": {
+        "source": "globalaccess",
+        "target": "globalaccess.activations"
+      }
+    },
+    {
+      "data": {
+        "source": "root",
+        "target": "globalaccess"
+      }
+    },
+    {
+      "data": {
+        "source": "globalaccess",
+        "target": "globalaccess.network"
+      }
+    },
+    {
+      "data": {
+        "source": "tools",
+        "target": "tools.chrome-extensions"
+      }
+    },
+    {
+      "data": {
+        "source": "tools",
+        "target": "tools.curl"
+      }
+    },
+    {
+      "data": {
+        "source": "tools",
+        "target": "tools.development"
+      }
+    },
+    {
+      "data": {
+        "source": "tools",
+        "target": "tools.git"
+      }
+    },
+    {
+      "data": {
+        "source": "tools",
+        "target": "tools.markdown"
+      }
+    },
+    {
+      "data": {
+        "source": "root",
+        "target": "tools"
+      }
+    },
+    {
+      "data": {
+        "source": "tools",
+        "target": "tools.online-web-tools"
+      }
+    },
+    {
+      "data": {
+        "source": "tools",
+        "target": "tools.uv"
+      }
+    },
+    {
+      "data": {
+        "source": "tools",
+        "target": "tools.vim"
+      }
+    },
+    {
+      "data": {
+        "source": "tools",
+        "target": "tools.vscode"
+      }
+    }
+  ]
+}
