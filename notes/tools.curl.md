@@ -2,7 +2,7 @@
 id: kponeoars1ghp0o6oa1ht2z
 title: Curl
 desc: ''
-updated: 1747966464841
+updated: 1749872670856
 created: 1747964867488
 ---
 
@@ -46,6 +46,8 @@ curl -s http://example.com
 
 // Silent mode with errors shown
 curl -sS http://example.com
+
+curl --cacert ica_web.chain https://example.com
 ```
 
 # 💡 Tips
