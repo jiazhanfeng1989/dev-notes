@@ -2,7 +2,7 @@
 id: kponeoars1ghp0o6oa1ht2z
 title: Curl
 desc: ''
-updated: 1749872670856
+updated: 1750051417636
 created: 1747964867488
 ---
 
@@ -12,47 +12,53 @@ created: 1747964867488
 
 # Common Commands
 ``` bash
-// Download a file
+# Download a file
 curl -O http://example.com/file.txt
 
-// Download a file with a different name
+# Download a file with a different name
 curl -o newname.txt http://example.com/file.txt
 
-// Post json data
+# Post json data
 curl -X POST http://example.com/api -H "Content-Type: application/json" -d '{"username":"admin","password":"123456"}'
 
-// Add a header
+# Add a header
 curl -H "Authorization: Bearer your_token" http://example.com/api
 
-// Header only
+# Header only
 curl -I http://example.com
 
-// Detail request and response
+# Detail request and response
 curl -v http://example.com
 
-// Use Cookie
+# Use Cookie
 curl -b "name=value" http://example.com
-// Use Cookie file
+
+# Use Cookie file
 curl -b cookies.txt http://example.com
 
-// Use Proxy
+# Use Proxy
 curl -x http://proxy.example.com:8080 http://example.com
 
-// ignore SSL certificate
+# ignore SSL certificate
 curl -k https://example.com
 
-// Silent mode
+# Silent mode
 curl -s http://example.com
 
-// Silent mode with errors shown
+# Silent mode with errors shown
 curl -sS http://example.com
 
+# verify SSL certificate with custom CA bundle
 curl --cacert ica_web.chain https://example.com
+
+# Fake system time for curl request
+apt install libfaketime
+LD_PRELOAD=/usr/lib/x86_64-linux-gnu/faketime/libfaketime.so.1 FAKETIME="2025-05-01 14:30:00" curl --cacert ./ica_web.chain https://example.com
 ```
 
 # 💡 Tips
 ``` bash
-// Use curl to test the speed of a website
+# Use curl to test the speed of a website
 curl -s -w ‘%{time_connect}###%{time_starttransfer}###%{time_total}###%{size_download}###%{speed_download}’ -X GET http://example.com
 
 for i in {1..1000};do curl -4 --location --request GET  'http://example.com'  -o /dev/null -s -w '\n%{time_namelookup}:%{time_connect}:%{time_starttransfer}:%{time_total}\n';done > /tmp/timings.log
