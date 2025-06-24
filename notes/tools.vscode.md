@@ -2,7 +2,7 @@
 id: srekil65jvjy632gi69fayo
 title: Vscode
 desc: ''
-updated: 1750237272137
+updated: 1750239312091
 created: 1748573802536
 ---
 
@@ -35,3 +35,4 @@ Common VSCode configurations and extensions to improve development efficiency.
 - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
 - [Python Black Formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
 - [Gnuplot](https://marketplace.visualstudio.com/items?itemName=fizzybreezy.gnuplot)
+- [GeoTools](https://marketplace.visualstudio.com/items?itemName=SmartMonkey.geotools)
