@@ -2,7 +2,7 @@
 id: 2d6cos1pfwffb9u3haim6o7
 title: Profile
 desc: ''
-updated: 1751508937811
+updated: 1752630339604
 created: 1751507724300
 ---
 
@@ -24,7 +24,7 @@ There are various advantage and disadvantages to both approaches.
 ## Instrumented code:
 ### Advantages:
 - Allows for timeline visualizing, which provides a lot of additional context to the profiling data. <br>
-It’s especially useful when spotting interlocking code or investigating flow dependent load times.
+It's especially useful when spotting interlocking code or investigating flow dependent load times.
 - Ability to add markers/descriptions to functions (such as this functions was called with these params), which can often help debugging why a function/scope is slow in various situations.
 - Since the scopes are handpicked, we can filter them out however we want, making visualizing the data much easier
 
