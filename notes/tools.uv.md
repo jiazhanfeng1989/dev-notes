@@ -2,7 +2,7 @@
 id: zm1ggni3j9lzfk4jr8skae0
 title: Uv
 desc: ''
-updated: 1747881417306
+updated: 1753426901565
 created: 1747879865550
 ---
 
@@ -10,8 +10,8 @@ created: 1747879865550
 [uv](https://github.com/astral-sh/uv) is an extremely fast Python package and project manager, written in Rust.
 
 # UV Docs
-[uv doc](https://docs.astral.sh/uv) <br>
-[uv 中文文档](https://hellowac.github.io/uv-zh-cn)
+- [uv doc](https://docs.astral.sh/uv)
+- [uv 中文文档](https://hellowac.github.io/uv-zh-cn)
 
 # UV Common Commands
 ## Python versions

@@ -2,7 +2,7 @@
 id: jizqzuh8dahnb6x9w5ag10g
 title: Markdown
 desc: ''
-updated: 1747533904420
+updated: 1753426884689
 created: 1747531303703
 ---
 
@@ -10,12 +10,12 @@ created: 1747531303703
 This document contains a collection of useful markdown tips, tricks, and best practices for effective documentation. It serves as a reference guide for various Markdown formatting techniques and common usage patterns.
 
 ## Syntax
-[basic syntax](https://www.markdownguide.org/basic-syntax/)</br>
-[extern syntax](https://www.markdownguide.org/extended-syntax/)<br>
-[cheat sheet](https://www.markdownguide.org/cheat-sheet/) <br>
-[git hub flavored markdown spec](https://github.github.com/gfm/) <br>
-[Complete Emoji List](https://github.com/ikatyang/emoji-cheat-sheet)<br>
-[shields](https://shields.io/)
+- [basic syntax](https://www.markdownguide.org/basic-syntax/)
+- [extern syntax](https://www.markdownguide.org/extended-syntax/)
+- [cheat sheet](https://www.markdownguide.org/cheat-sheet/)
+- [git hub flavored markdown spec](https://github.github.com/gfm/)
+- [Complete Emoji List](https://github.com/ikatyang/emoji-cheat-sheet)
+- [shields](https://shields.io/)
 
 
 ### Common Emojis

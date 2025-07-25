@@ -2,7 +2,7 @@
 id: 2d6cos1pfwffb9u3haim6o7
 title: Profile
 desc: ''
-updated: 1752630339604
+updated: 1753426822572
 created: 1751507724300
 ---
 
@@ -36,6 +36,6 @@ Examples of similar instrumented code profilers include [orbit](https://github.c
 All of these have some pretty advanced features, most of which cannot be achieved with the regular sampled approach.
 
 # References
-[profilerpedia](https://profilerpedia.markhansen.co.nz/)<br>
-[c++ profilers](https://hackingcpp.com/cpp/tools/profilers.html)<br>
-[perfetto](https://perfetto.dev/docs/getting-started/system-tracing)
+- [profilerpedia](https://profilerpedia.markhansen.co.nz/)
+- [c++ profilers](https://hackingcpp.com/cpp/tools/profilers.html)
+- [perfetto](https://perfetto.dev/docs/getting-started/system-tracing)

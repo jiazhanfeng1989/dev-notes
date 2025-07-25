@@ -2,7 +2,7 @@
 id: t72b28xbran0edcp6di00s1
 title: Openssl
 desc: ''
-updated: 1749873367700
+updated: 1753423790538
 created: 1749868778922
 ---
 
@@ -48,7 +48,7 @@ cat cert.pem ca.pem > ca_web.chain
 
 # Connect to a secure server and display certificate details
 # Used for verifying SSL/TLS connections and examining server certificates
-openssl s_client -showcerts -connect example.com:443
+openssl s_client -connect example.com:8443
 
 # Convert certificate chain to PKCS#7 format and display detailed certificate information
 # Useful for inspecting all certificates in a chain (leaf, intermediate, root)
