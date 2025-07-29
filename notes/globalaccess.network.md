@@ -2,7 +2,7 @@
 id: iuoqqw1cg9yijbpy5u58rwb
 title: Network
 desc: ''
-updated: 1750152040334
+updated: 1753771966489
 created: 1748595426037
 ---
 
@@ -58,6 +58,4 @@ created: 1748595426037
 
 # 机场
 [flowercloud](https://flowercloud.net/clientarea.php)
-
-# VPN 推荐
-[VPN 推荐](https://github.com/vpncn/vpncn.github.io)
+[hongxingcloud](https://hongxing.one/index.html)
