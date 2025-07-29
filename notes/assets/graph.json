@@ -16,6 +16,20 @@
     },
     {
       "data": {
+        "id": "devops.c++.opensource",
+        "label": "Opensource",
+        "url": "/notes/9zio5f0cupqvkw4j4g1m5fx"
+      }
+    },
+    {
+      "data": {
+        "id": "devops.c++.profile",
+        "label": "Profile",
+        "url": "/notes/2d6cos1pfwffb9u3haim6o7"
+      }
+    },
+    {
+      "data": {
         "id": "devops.changelog-template",
         "label": "Changelog Template",
         "url": "/notes/oshs6bzntb6bgoenrtrl5pg"
@@ -47,6 +61,13 @@
         "id": "globalaccess.activations",
         "label": "Activations",
         "url": "/notes/ixifnst1rmziu8pwpt3vwc8"
+      }
+    },
+    {
+      "data": {
+        "id": "globalaccess.dns",
+        "label": "DNS",
+        "url": "/notes/rlhm3f2dfoedn0xz9gvip76"
       }
     },
     {
@@ -100,6 +121,13 @@
     },
     {
       "data": {
+        "id": "tools.gnuplot",
+        "label": "Gnuplot",
+        "url": "/notes/5yvijlnlnsw6eal6htmfa85"
+      }
+    },
+    {
+      "data": {
         "id": "tools.markdown",
         "label": "Markdown",
         "url": "/notes/jizqzuh8dahnb6x9w5ag10g"
@@ -114,9 +142,30 @@
     },
     {
       "data": {
+        "id": "tools.network-protocol-analyzer",
+        "label": "Network Protocol Analyzer",
+        "url": "/notes/wst5kzs4csxbqjw49n5wg0r"
+      }
+    },
+    {
+      "data": {
         "id": "tools.online-web-tools",
         "label": "Online Web Tools",
         "url": "/notes/nuj2ok2ws9pv402e9l4yqhd"
+      }
+    },
+    {
+      "data": {
+        "id": "tools.openssl",
+        "label": "Openssl",
+        "url": "/notes/t72b28xbran0edcp6di00s1"
+      }
+    },
+    {
+      "data": {
+        "id": "tools.rsync",
+        "label": "Rsync",
+        "url": "/notes/pyvot9dxqa4pg830ef0wb0c"
       }
     },
     {
@@ -139,6 +188,13 @@
         "label": "Vscode",
         "url": "/notes/srekil65jvjy632gi69fayo"
       }
+    },
+    {
+      "data": {
+        "id": "websiteshub",
+        "label": "Websiteshub",
+        "url": "/notes/4fk3jkigwyj54qm4lsd815w"
+      }
     }
   ],
   "edges": [
@@ -152,6 +208,18 @@
       "data": {
         "source": "devops",
         "target": "devops.c++"
+      }
+    },
+    {
+      "data": {
+        "source": "devops.c++",
+        "target": "devops.c++.opensource"
+      }
+    },
+    {
+      "data": {
+        "source": "devops.c++",
+        "target": "devops.c++.profile"
       }
     },
     {
@@ -182,6 +250,12 @@
       "data": {
         "source": "globalaccess",
         "target": "globalaccess.activations"
+      }
+    },
+    {
+      "data": {
+        "source": "globalaccess",
+        "target": "globalaccess.dns"
       }
     },
     {
@@ -223,6 +297,12 @@
     {
       "data": {
         "source": "tools",
+        "target": "tools.gnuplot"
+      }
+    },
+    {
+      "data": {
+        "source": "tools",
         "target": "tools.markdown"
       }
     },
@@ -235,7 +315,25 @@
     {
       "data": {
         "source": "tools",
+        "target": "tools.network-protocol-analyzer"
+      }
+    },
+    {
+      "data": {
+        "source": "tools",
         "target": "tools.online-web-tools"
+      }
+    },
+    {
+      "data": {
+        "source": "tools",
+        "target": "tools.openssl"
+      }
+    },
+    {
+      "data": {
+        "source": "tools",
+        "target": "tools.rsync"
       }
     },
     {
@@ -254,6 +352,12 @@
       "data": {
         "source": "tools",
         "target": "tools.vscode"
+      }
+    },
+    {
+      "data": {
+        "source": "root",
+        "target": "websiteshub"
       }
     }
   ]
