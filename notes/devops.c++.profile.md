@@ -2,7 +2,7 @@
 id: 2d6cos1pfwffb9u3haim6o7
 title: Profile
 desc: ''
-updated: 1754030584752
+updated: 1754040130190
 created: 1751507724300
 ---
 
@@ -43,3 +43,4 @@ All of these have some pretty advanced features, most of which cannot be achieve
 - [orbit](https://github.com/google/orbit)
 - [framepro](https://www.puredevsoftware.com/framepro/index.htm)
 - [tracy](https://github.com/wolfpld/tracy)
+- [linux bpf](https://zhuanlan.zhihu.com/p/469860384)
