@@ -2,7 +2,7 @@
 id: 2d6cos1pfwffb9u3haim6o7
 title: Profile
 desc: ''
-updated: 1753426822572
+updated: 1754030584752
 created: 1751507724300
 ---
 
@@ -39,3 +39,7 @@ All of these have some pretty advanced features, most of which cannot be achieve
 - [profilerpedia](https://profilerpedia.markhansen.co.nz/)
 - [c++ profilers](https://hackingcpp.com/cpp/tools/profilers.html)
 - [perfetto](https://perfetto.dev/docs/getting-started/system-tracing)
+- [MTuner](https://github.com/RudjiGames/MTuner)
+- [orbit](https://github.com/google/orbit)
+- [framepro](https://www.puredevsoftware.com/framepro/index.htm)
+- [tracy](https://github.com/wolfpld/tracy)
