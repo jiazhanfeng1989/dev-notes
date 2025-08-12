@@ -2,7 +2,7 @@
 id: srekil65jvjy632gi69fayo
 title: Vscode
 desc: ''
-updated: 1751448530159
+updated: 1754992722796
 created: 1748573802536
 ---
 
@@ -37,3 +37,5 @@ Common VSCode configurations and extensions to improve development efficiency.
 - [Gnuplot](https://marketplace.visualstudio.com/items?itemName=fizzybreezy.gnuplot)
 - [GeoTools](https://marketplace.visualstudio.com/items?itemName=SmartMonkey.geotools)
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer&WT.mc_id=academic-77807-sagibbon)
+- [Markdown Mermaid](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
+- [Mermaid Markdown Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=bpruitt-goddard.mermaid-markdown-syntax-highlighting)

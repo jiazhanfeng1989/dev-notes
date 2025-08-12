@@ -2,7 +2,7 @@
 id: 68krwv07d88e4730egwsui9
 title: Git
 desc: ''
-updated: 1747997542944
+updated: 1754994647902
 created: 1747391620429
 ---
 
@@ -66,17 +66,20 @@ Cherry-pick creates a new commit with:
 - New timestamp
 
 Example commit history:
+```mermaid
+gitGraph
+    commit id: "A"
+    commit id: "B"
+    branch feature
+    checkout feature
+    commit id: "D (abc123)"
+    commit id: "E (def456)"
+    checkout main
+    commit id: "C"
+    cherry-pick id: "D (abc123)"
 ```
-Before cherry-pick:
-A -> B -> C (main)
-     \
-      D -> E (feature)
+**Note**: Cherry-pick creates a new commit with a different SHA (xyz789) but same content as original D (abc123).
 
-After cherry-pick D to main:
-A -> B -> C -> D' (main)  # D' is a new commit
-     \
-      D -> E (feature)
-```
 ### Git cherry-pick usage
 ``` git
 // Cherry-pick with origin commit reference 
@@ -92,18 +95,37 @@ git cherry-pick --no-commit <commit-hash>
 ## Git rebase command
 Rebase changes the base of your branch and creates new commits for each commit in your branch.
 
-Example commit history:
+**Before rebase:**
+```mermaid
+gitGraph
+    commit id: "A"
+    commit id: "B"
+    branch feature
+    checkout feature
+    commit id: "D (abc123)"
+    commit id: "E (def456)"
+    checkout main
+    commit id: "C"
+    commit id: "F"
 ```
-Before rebase:
-      D -> E (feature)
-     /
-A -> B -> C -> F (main)
 
-After rebase:
-A -> B -> C -> F (main)
-                 \
-                  D' -> E' (feature)
+**After rebase (git rebase main):**
+```mermaid
+gitGraph
+    commit id: "A"
+    commit id: "B"
+    commit id: "C"
+    commit id: "F"
+    branch feature
+    checkout feature
+    commit id: "D' (xyz789)" type: HIGHLIGHT
+    commit id: "E' (uvw012)" type: HIGHLIGHT
 ```
+
+**Rebase Process:**
+1. Original commits D (abc123) and E (def456) are removed from feature branch
+2. Feature branch is moved to latest main commit (F)
+3. New commits D' (xyz789) and E' (uvw012) are created with same content but different SHAs
 ### git rebase usage
 ```git
 // Basic rebase
@@ -125,56 +147,110 @@ git rebase --continue
 ### Git Merge Strategies
 ### --no-ff (No Fast Forward)
 Creates a new merge commit even when a fast-forward would be possible.
-```
-Before merge (--no-ff):
-main:   A -> B -> C
-                  \
-feature:           D -> E
 
-After merge (--no-ff):
-main:   A -> B ->  C   -> M
-                  \      /
-feature:           D -> E
+**Before merge (--no-ff):**
+```mermaid
+gitGraph
+    commit id: "A"
+    commit id: "B"
+    commit id: "C"
+    branch feature
+    checkout feature
+    commit id: "D"
+    commit id: "E"
+```
+
+**After merge (--no-ff):**
+```mermaid
+gitGraph
+    commit id: "A"
+    commit id: "B"
+    commit id: "C"
+    branch feature
+    checkout feature
+    commit id: "D"
+    commit id: "E"
+    checkout main
+    merge feature
+    commit id: "M (merge)" type: HIGHLIGHT
 ```
 ### --ff (Fast Forward)
 Default behavior. If possible, moves the branch pointer forward.
 
+**Before merge (--ff):**
+```mermaid
+gitGraph
+    commit id: "A"
+    commit id: "B"
+    commit id: "C"
+    branch feature
+    checkout feature
+    commit id: "D"
+    commit id: "E"
 ```
-Before merge (--ff):
-main:   A -> B -> C
-                  \
-feature:           D -> E
 
-After merge (--ff):
-main:   A -> B -> C -> D -> E
+**After merge (--ff):**
+```mermaid
+gitGraph
+    commit id: "A"
+    commit id: "B"
+    commit id: "C"
+    commit id: "D" type: HIGHLIGHT
+    commit id: "E" type: HIGHLIGHT
 ```
 ### --ff-only
 Only allows merge if it can be fast-forwarded.
 
+**Will succeed (--ff-only):**
+```mermaid
+gitGraph
+    commit id: "A"
+    commit id: "B"
+    commit id: "C"
+    branch feature
+    checkout feature
+    commit id: "D"
+    commit id: "E"
 ```
-# Will succeed (--ff-only):
-main:   A -> B -> C
-                  \
-feature:           D -> E
 
-# Will fail (--ff-only):
-main:   A -> B -> C -> X
-                  \
-feature:           D -> E
+**Will fail (--ff-only):**
+```mermaid
+gitGraph
+    commit id: "A"
+    commit id: "B"
+    commit id: "C"
+    commit id: "X"
+    branch feature
+    checkout feature
+    commit id: "D"
+    commit id: "E"
 ```
 ### --squash
 Combines all changes into a single new commit.
 
+**Before squash:**
+```mermaid
+gitGraph
+    commit id: "A"
+    commit id: "B"
+    commit id: "C"
+    branch feature
+    checkout feature
+    commit id: "D"
+    commit id: "E"
 ```
-Before squash:
-main:   A -> B -> C
-                  \
-feature:           D -> E
 
-After squash:
-main:   A -> B -> C -> S  # S contains D+E changes
-                  \
-feature:           D -> E
+**After squash:**
+```mermaid
+gitGraph
+    commit id: "A"
+    commit id: "B"
+    commit id: "C"
+    commit id: "S (D+E)" type: HIGHLIGHT
+    branch feature
+    checkout feature
+    commit id: "D"
+    commit id: "E"
 ```
 
 ### git commit usage
