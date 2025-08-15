@@ -2,7 +2,7 @@
 id: 9zio5f0cupqvkw4j4g1m5fx
 title: Opensource
 desc: ''
-updated: 1753426793169
+updated: 1756274501704
 created: 1752630436332
 ---
 # Description
@@ -35,3 +35,4 @@ Some of the opensource projects I've worked on.
 - [Optional](https://github.com/akrzemi1/Optional) - A single-header header-only library for representing optional (nullable) objects for C++14.
 - [protozero](https://github.com/mapbox/protozero) - A super fast serialization/deserialization library for C++.
 - [sqlite](https://github.com/sqlite/sqlite) - SQLite is a C library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine.
+- [zlib](https://github.com/madler/zlib) - A compression library for C.

@@ -2,7 +2,7 @@
 id: 68krwv07d88e4730egwsui9
 title: Git
 desc: ''
-updated: 1754994647902
+updated: 1755226000036
 created: 1747391620429
 ---
 
@@ -307,4 +307,14 @@ git rm --cached <file>
 3. git commit -m "Initial commit"
 4. git remote add origin git@github.com:user/repo.git
 5. git push -u origin main
+```
+
+## Git reflog command
+reflog is a log of all changes to the repository, including all commits, branches, and tags.
+``` git
+// List all reflog entries
+git reflog
+
+// List reflog entries for a specific branch
+git reflog show <branch-name>
 ```
