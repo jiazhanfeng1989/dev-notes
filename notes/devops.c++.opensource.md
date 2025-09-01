@@ -2,7 +2,7 @@
 id: 9zio5f0cupqvkw4j4g1m5fx
 title: Opensource
 desc: ''
-updated: 1756274501704
+updated: 1756718086173
 created: 1752630436332
 ---
 # Description
@@ -36,3 +36,6 @@ Some of the opensource projects I've worked on.
 - [protozero](https://github.com/mapbox/protozero) - A super fast serialization/deserialization library for C++.
 - [sqlite](https://github.com/sqlite/sqlite) - SQLite is a C library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine.
 - [zlib](https://github.com/madler/zlib) - A compression library for C.
+- [abseil](https://github.com/abseil/abseil-cpp) - Abseil is a collection of libraries for C++.
+- [robin-hood-hashing](https://github.com/martinus/robin-hood-hashing) - A fast hash map implementation for C++.
+- [libevent](https://github.com/libevent/libevent) - An event notification library for C.

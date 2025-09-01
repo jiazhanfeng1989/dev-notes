@@ -2,7 +2,7 @@
 id: nuj2ok2ws9pv402e9l4yqhd
 title: Online Web Tools
 desc: 'Useful online web tools'
-updated: 1753939324163
+updated: 1756718804962
 created: 1747649390594
 ---
 
@@ -29,3 +29,4 @@ Some useful online web tools.
 - [Groovy Web Console](https://gwc-experiment.appspot.com/#o5fCgfY5P2)
 - [Graph theory (network) library](https://js.cytoscape.org/)
 - [jspaint](https://jspaint.app)
+- [GitMind](https://gitmind.com/)
