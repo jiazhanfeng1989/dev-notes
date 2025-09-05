@@ -2,7 +2,7 @@
 id: on2qz3a6abodbpou4pp2mxk
 title: Best Practices
 desc: ''
-updated: 1756718884194
+updated: 1756802939093
 created: 1756358433773
 ---
 
@@ -32,6 +32,8 @@ Some recommended books about programming and C++, consider the copyright, there 
   - [C++ 函数编程笔记](https://github.com/helywin/functional_programming_practice?tab=readme-ov-file)
 - C++ Templates: The Complete Guide (C++模板编程)
 - 程序员的自我修养
+  - [程序员的自我修养-链接封装与库](https://ochicken.net/library/Computer_System/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%87%AA%E6%88%91%E4%BF%AE%E5%85%BB%E2%80%94%E9%93%BE%E6%8E%A5%E3%80%81%E8%A3%85%E8%BD%BD%E4%B8%8E%E5%BA%93.pdf)
+  - [程序员的自我修养-总结笔记](https://blog.csdn.net/fengbingchun/article/details/102230252)
 
 # Best Practices
 ## Function C++ Comparison Table

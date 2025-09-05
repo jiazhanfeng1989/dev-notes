@@ -2,11 +2,11 @@
 id: 9zio5f0cupqvkw4j4g1m5fx
 title: Opensource
 desc: ''
-updated: 1756718086173
+updated: 1757040050961
 created: 1752630436332
 ---
 # Description
-Some of the opensource projects I've worked on.
+Some of the opensource projects collected.
 
 - [fmt](https://github.com/fmtlib/fmt) - A modern formatting library.
 - [spdlog](https://github.com/gabime/spdlog) - Fast C++ logging library.
