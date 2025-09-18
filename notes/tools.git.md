@@ -2,7 +2,7 @@
 id: 68krwv07d88e4730egwsui9
 title: Git
 desc: ''
-updated: 1755226000036
+updated: 1758193317916
 created: 1747391620429
 ---
 
@@ -14,8 +14,9 @@ This section contains frequently used Git commands for daily development workflo
 - Important flags and options
 
 ## Git Documents
-[git book](https://git-scm.com/book/zh/v2)<br>
-[pro git book](https://www.progit.cn/)
+- [git book](https://git-scm.com/book/zh/v2)
+- [pro git book](https://www.progit.cn/)
+- [visualizing git](https://git-school.github.io/visualizing-git/)
 
 ## Git config command
 
