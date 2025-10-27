@@ -2,7 +2,7 @@
 id: ef887ao8ygjcu4sbmehvs8j
 title: Best Practices
 desc: ''
-updated: 1760664503261
+updated: 1763537383851
 created: 1757038742246
 ---
 
@@ -40,25 +40,26 @@ go tool -n goimports # Print out the path to the tool on the filesytem
 ```
 
 # Documents
+- [Go Language Specification](https://go.dev/ref/spec)
 - [Effective Go](https://go.dev/doc/effective_go)
 - [Go References](https://go.dev/doc/#references)
-- [Go Modules Details](https://go.dev/ref/mod)
-- [Using Go Modules](https://go.dev/blog/using-go-modules)
-- [Go Command](https://pkg.go.dev/cmd/go)
-- [Go Configuration for Downloading Non Public Code](https://pkg.go.dev/cmd/go#hdr-Configuration_for_downloading_non_public_code)
 - [Go Code Review Comments](https://go.dev/wiki/CodeReviewComments)
+- [Context and Structs](https://go.dev/blog/context-and-structs)
+- [Go Pprof](https://go.dev/blog/pprof)
 - [Go Slog](https://go.dev/blog/slog)
-- [Go GC Guide](https://tip.golang.org/doc/gc-guide)
 - [Go SwissTable](https://go.dev/blog/swisstable)
-- [Go 101](https://go101.org/article/101.html)
-- [Go Proverbs](https://go-proverbs.github.io)
-- [Go Profiling with pprof](https://pkg.go.dev/runtime/pprof)
-- [Go Style Guide](https://google.github.io/styleguide/go/decisions)
 - [Go Test Comments](https://go.dev/wiki/TestComments)
 - [Go Testable Examples](https://go.dev/blog/examples)
 - [Go Table Driven Tests](https://go.dev/wiki/TableDrivenTests)
+- [Go Modules Details](https://go.dev/ref/mod)
+- [Using Go Modules](https://go.dev/blog/using-go-modules)
+- [Go Profiling with pprof](https://pkg.go.dev/runtime/pprof)
+- [Go Command](https://pkg.go.dev/cmd/go)
+- [Go Configuration for Downloading Non Public Code](https://pkg.go.dev/cmd/go#hdr-Configuration_for_downloading_non_public_code)
+- [Go 101](https://go101.org/article/101.html)
+- [Go Proverbs](https://go-proverbs.github.io)
+- [Go GC Guide](https://tip.golang.org/doc/gc-guide)
 - [Golangci-lint Documentation](https://golangci-lint.run/docs/)
-- [Context and Structs](https://go.dev/blog/context-and-structs)
 - [Context Induced Performance Bottleneck in Go](https://gabnotes.org/posts/context-induced-performance-bottleneck-in-go)
 - [Go Tools Command](https://blog.howardjohn.info/posts/go-tools-command/)
 - [Go Compiler Directives](https://zchee.github.io/golang-wiki/Comments/)
@@ -66,7 +67,9 @@ go tool -n goimports # Print out the path to the tool on the filesytem
 - [Go Advice](https://github.com/cristaloleg/go-advice)
 - [Go Serialization Benchmarks](https://github.com/alecthomas/go_serialization_benchmarks)
 - [Debugging performance issues in Go programs](https://go.dev/wiki/Performance)
-- [Go Code Refactoring the 23x Performance Hunt](https://medium.com/@val_deleplace/go-code-refactoring-the-23x-performance-hunt-156746b522f7)
+- [Google Go Style Guide](https://google.github.io/styleguide/go/decisions)
+- [Go FAQ](https://go.dev/doc/faq)
+- [Go Blog](https://go.dev/blog/)
 
 # Some Golang not compatible changes
 - [Loop variable preview](https://go.dev/blog/loopvar-preview)

@@ -2,7 +2,7 @@
 id: 3rm4baml4gu8ec1eaxwnibh
 title: Golangci Lint
 desc: ''
-updated: 1760698697916
+updated: 1761535470771
 created: 1757993320513
 ---
 
@@ -30,6 +30,10 @@ golangci-lint linters
 golangci-lint fmt -h
 golangci-lint run -h
 golangci-lint config verify
+golangci-lint cache clean
 `````
 # Integrations with other tools
 [Integrations](https://golangci-lint.run/docs/welcome/integrations/)
+
+# Template
+[.golangci.yaml](./assets/.golangci.yaml)
