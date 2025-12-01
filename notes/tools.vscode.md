@@ -2,7 +2,7 @@
 id: srekil65jvjy632gi69fayo
 title: Vscode
 desc: ''
-updated: 1754992722796
+updated: 1764664576277
 created: 1748573802536
 ---
 
@@ -39,3 +39,71 @@ Common VSCode configurations and extensions to improve development efficiency.
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer&WT.mc_id=academic-77807-sagibbon)
 - [Markdown Mermaid](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
 - [Mermaid Markdown Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=bpruitt-goddard.mermaid-markdown-syntax-highlighting)
+
+# vscode useful search 
+- [vscode search](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files)
+- [using regex in vscode for powerful searching](https://keyholesoftware.com/using-regex-in-vscode-for-powerful-searching/?utm_source=chatgpt.com)
+
+## VSCode shortcuts
+```
+open command palette:                     Command (⌘) + Shift (⇧) + P
+open terminal:                            Ctrl (⌃) + `
+open file:                                Command (⌘) + P
+open next editor:                         Command (⌘) + Option (⌥)  +  <- or ->
+move editor to next group:                Command (⌘) +  ⌃ +  <- or ->
+open new file:                            Command (⌘) + N
+go to line:                               ⌃  + g
+close tab:                                Command (⌘) + W
+toggle terminal:                          Command (⌘) + J
+open side bar:                            Command (⌘) + B
+hide secondary sidebar:                   Command (⌘) + Shift (⇧) + B
+open settings:                            Command (⌘) + ,
+go back to previous edit location:        Ctrl (⌃) + -
+go forward to next edit location:         Ctrl (⌃) + Shift (⇧) + -
+selects the word at the cursor            Command (⌘) + D
+```
+
+# vscode regular search expression
+```
+// Match /api/example and keyword in any order
+^(?=.*/api/example)(?=.*keyword)
+
+// Match keywordA and keywordB together and match order
+keywordA.*keywordB
+
+// Match keywordA or keywordB
+keywordA|keywordB
+
+// Json match keywordA:number
+"keywordA"\s*:\s*\d+
+ 
+// Lines NOT containing 'keyword'
+^(?!.*keyword).*$
+
+// Duplicate words (e.g., 'the the')
+\b(\w+)\s+\1\b
+
+// Match camelCase identifiers
+\b[a-z]+(?:[A-Z][a-z0-9]+)+\b
+
+// Match PascalCase identifiers
+\b(?:[A-Z][a-z0-9]+){2,}\b
+
+// Match snake_case identifiers
+\b[a-z]+(?:_[a-z0-9]+)+\b
+
+// Match IPv4 address
+\b(?:(?:25[0-5]|2[0-4]\d|1?\d?\d)\.){3}(?:25[0-5]|2[0-4]\d|1?\d?\d)\b
+
+// Match URL (http/https)
+https?://\S+
+
+// Match ISO date YYYY-MM-DD
+\b\d{4}-\d{2}-\d{2}\b
+
+// Match semantic version x.y.z
+\b\d+\.\d+\.\d+\b
+
+// Across lines: 'foo' ... 'bar' (non-greedy)
+foo[\s\S]*?bar
+```
