@@ -2,7 +2,7 @@
 id: kponeoars1ghp0o6oa1ht2z
 title: Curl
 desc: ''
-updated: 1750051417636
+updated: 1767065309809
 created: 1747964867488
 ---
 
@@ -50,6 +50,9 @@ curl -sS http://example.com
 
 # verify SSL certificate with custom CA bundle
 curl --cacert ica_web.chain https://example.com
+
+# install script with curl and bash
+curl -fsSL https://test.com/install.sh | bash
 
 # Fake system time for curl request
 apt install libfaketime
