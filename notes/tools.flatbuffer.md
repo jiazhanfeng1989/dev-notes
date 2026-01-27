@@ -2,7 +2,7 @@
 id: km0y7isr2pdcx90z7y2e0p6
 title: Flatbuffer
 desc: ''
-updated: 1768899318264
+updated: 1770276088550
 created: 1768893975072
 ---
 
@@ -33,7 +33,4 @@ flatc -g --gen-object-api -o ./output ./example.fbs
 
 # check the schema file
 flatc schema.fbs
-
-# verify the schema file and the binary file
-flatc -V schema.fbs data.bin
 ```
