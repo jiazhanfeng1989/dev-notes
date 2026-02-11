@@ -2,7 +2,7 @@
 id: zm1ggni3j9lzfk4jr8skae0
 title: Uv
 desc: ''
-updated: 1753426901565
+updated: 1770805925828
 created: 1747879865550
 ---
 
@@ -18,7 +18,7 @@ created: 1747879865550
 Installing and managing Python itself.
 ``` text
 uv python install: Install Python versions.
-uv python list: View available Python versions.
+uv python list: View installed Python versions.
 uv python find: Find an installed Python version.
 uv python pin: Pin the current project to use a specific Python version
 uv python uninstall: Uninstall a Python version.
@@ -89,6 +89,16 @@ uv cache dir: Show the uv cache directory path.
 uv tool dir: Show the uv tool directory path.
 uv python dir: Show the uv installed Python versions path.
 uv self update: Update uv to the latest version.
+```
+
+# UV Examples
+``` bash
+uvx --python 3.11 main.py
+uv init --python 3.11
+uv venv --python 3.11
+uv add fastapi uvicorn
+uv sync
+uv export -f requirements.txt
 ```
 
 
