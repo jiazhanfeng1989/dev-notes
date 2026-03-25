@@ -2,7 +2,7 @@
 id: zm1ggni3j9lzfk4jr8skae0
 title: Uv
 desc: ''
-updated: 1770805925828
+updated: 1774421446832
 created: 1747879865550
 ---
 
@@ -94,11 +94,20 @@ uv self update: Update uv to the latest version.
 # UV Examples
 ``` bash
 uvx --python 3.11 main.py
+
+# create a virtual environment
 uv init --python 3.11
 uv venv --python 3.11
+source .venv/bin/activate # activate the virtual environment
+deactivate # deactivate the virtual environment
+
+
 uv add fastapi uvicorn
 uv sync
 uv export -f requirements.txt
+
+uv python install 3.12.10
+uv python pin 3.12.10 --global
 ```
 
 

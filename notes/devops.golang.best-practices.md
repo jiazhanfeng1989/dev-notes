@@ -2,7 +2,7 @@
 id: ef887ao8ygjcu4sbmehvs8j
 title: Best Practices
 desc: ''
-updated: 1763537383851
+updated: 1774409333335
 created: 1757038742246
 ---
 
@@ -11,7 +11,7 @@ Some best practices for programming and Golang.
 
 # Golang Development Configuration
 ```bash
-go env -w GOPROXY=https://goproxy.cn,direct
+go env -w GOPROXY=https://proxy.golang.org,https://goproxy.io,https://mirrors.aliyun.com/goproxy/,direct
 go env -w GOPRIVATE=bitbucket.***.com
 go env -w GONOSUMDB=bitbucket.***.com
 go env -w GONOPROXY=bitbucket.***.com

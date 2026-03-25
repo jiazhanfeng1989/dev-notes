@@ -2,7 +2,7 @@
 id: srekil65jvjy632gi69fayo
 title: Vscode
 desc: ''
-updated: 1764664576277
+updated: 1774424395765
 created: 1748573802536
 ---
 
@@ -17,8 +17,6 @@ Common VSCode configurations and extensions to improve development efficiency.
 - [CMake Language Support](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)
 - [Clangd](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd)
 - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
-- [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)
 - [OpenAPI Swagger Editor](https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi)
 - [OpenAPI Designer](https://marketplace.visualstudio.com/items?itemName=philosowaffle.openapi-designer)
 - [Code Statistics](https://marketplace.visualstudio.com/items?itemName=caixw.statistic)

@@ -2,7 +2,7 @@
 id: 68krwv07d88e4730egwsui9
 title: Git
 desc: ''
-updated: 1758193317916
+updated: 1774405663936
 created: 1747391620429
 ---
 
@@ -17,6 +17,7 @@ This section contains frequently used Git commands for daily development workflo
 - [git book](https://git-scm.com/book/zh/v2)
 - [pro git book](https://www.progit.cn/)
 - [visualizing git](https://git-school.github.io/visualizing-git/)
+- [Git Large File Storage (LFS)](https://git-lfs.com/)
 
 ## Git config command
 
@@ -30,6 +31,10 @@ git config --local -l
 // Configure user info for current repository
 git config --local user.name 
 git config --local user.email
+
+# Set username and email (required for first time Git users)
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
 ```
 
 ## Git fetch command

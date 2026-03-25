@@ -2,7 +2,7 @@
 id: xlunmb0ghxcktv2dvlc87em
 title: Linux
 desc: ''
-updated: 1765439529284
+updated: 1773713316376
 created: 1764840959429
 ---
 
@@ -59,4 +59,21 @@ find ./ -type f -empty # find all empty files in the current directory
 
 ps -ww -o pid,ppid,user,lstart,command -p <PID> # print the process information of the process with PID <PID>
 ps eww -o command= -p <PID> # print the command and arguments and environment variables of the process with PID <PID>
+
+
+# dd - data duplicator, used for copying and converting data
+dd if=/dev/zero of=testfile bs=1M count=1024 # create a 1GB test file filled with zeros (1M block size × 1024 blocks = 1GB)
+dd if=/dev/urandom of=random.bin bs=1M count=100 # create a 100MB file with random data (for encryption/compression testing)
+dd if=/dev/zero of=testfile bs=1M count=1024 status=progress # show progress during file creation
+dd if=/dev/zero of=testfile bs=1G count=10 # create a 10GB file using larger blocks (faster for large files)
+dd if=largefile.bin of=/dev/null bs=1M # test disk read speed by reading file and discarding output
+dd if=/dev/zero of=testfile bs=1G count=1 oflag=direct # bypass cache for direct I/O (real disk write speed test)
+dd if=testfile of=/dev/null bs=1G count=1 iflag=direct # bypass cache for direct I/O (real disk read speed test)
+dd if=/dev/zero of=testfile bs=1M count=1024 conv=fsync # force data to be written to disk (sync write)
+dd if=source.img of=target.img bs=4M status=progress # copy/clone disk image with progress display
+dd if=/dev/zero of=100MB.bin bs=1M count=100 # 100 MB
+dd if=/dev/zero of=10GB.bin bs=1M count=10240 # 10 GB
+
+# Test download speed
+time scp user@server:/tmp/testfile ./downloaded_file
 ```
