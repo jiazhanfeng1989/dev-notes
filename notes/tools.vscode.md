@@ -2,7 +2,7 @@
 id: srekil65jvjy632gi69fayo
 title: Vscode
 desc: ''
-updated: 1774424395765
+updated: 1774601869264
 created: 1748573802536
 ---
 
@@ -11,7 +11,6 @@ Common VSCode configurations and extensions to improve development efficiency.
 
 # vscode Useful Extensions
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-- [Atlassian: Jira and Bitbucket](https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode)
 - [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
 - [CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
 - [CMake Language Support](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)
