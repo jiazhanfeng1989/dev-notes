@@ -2,7 +2,7 @@
 id: 3ow2waa14bgo01jsubc2ae3
 title: Mac
 desc: ''
-updated: 1774516338251
+updated: 1774597366546
 created: 1770346207348
 ---
 
@@ -87,4 +87,10 @@ brew install --cask temurin@21
 
 # install ninja
 brew install ninja
+
+# install npm
+brew install npm
+
+# install orbstack
+brew install orbstack
 ```
