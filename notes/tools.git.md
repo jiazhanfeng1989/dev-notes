@@ -2,7 +2,7 @@
 id: 68krwv07d88e4730egwsui9
 title: Git
 desc: ''
-updated: 1774405663936
+updated: 1777309034523
 created: 1747391620429
 ---
 
@@ -35,6 +35,10 @@ git config --local user.email
 # Set username and email (required for first time Git users)
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
+
+
+# Set core.quotepath to false to fix Chinese display problem
+git config --set core.quotepath false
 ```
 
 ## Git fetch command

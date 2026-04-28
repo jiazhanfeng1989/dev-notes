@@ -2,7 +2,7 @@
 id: 3ow2waa14bgo01jsubc2ae3
 title: Mac
 desc: ''
-updated: 1774597366546
+updated: 1776936180145
 created: 1770346207348
 ---
 
@@ -56,6 +56,13 @@ brew info geos
 # Disable brew auto update
 echo 'export HOMEBREW_NO_AUTO_UPDATE=1' >> ~/.zshrc
 HOMEBREW_NO_AUTO_UPDATE=1 brew install wget
+
+
+# Keep the computer awake
+ caffeinate -d
+
+# Keep the computer awake for 1 hour
+caffeinate -dimsu -t 3600
 ```
 
 # Development Tools
@@ -93,4 +100,7 @@ brew install npm
 
 # install orbstack
 brew install orbstack
+
+# install meld
+brew install --cask meld
 ```
