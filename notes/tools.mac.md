@@ -2,7 +2,7 @@
 id: 3ow2waa14bgo01jsubc2ae3
 title: Mac
 desc: ''
-updated: 1776936180145
+updated: 1778558747341
 created: 1770346207348
 ---
 
@@ -13,6 +13,31 @@ Some tools for Mac.
 - [mole](https://github.com/tw93/mole) Deep clean and optimize your Mac.
 - [AppCleaner](https://freemacsoft.net/appcleaner/) Uninstall unwanted apps.
 - [OmniDiskSweeper](https://www.omnigroup.com/more/omnidisksweeper/) Disk space analyzer.
+
+## Mac shortcuts
+```
+
+# Source for added/corrected Apple shortcuts: https://support.apple.com/en-us/102650
+Show Desktop:                              Fn + F11
+Spotlight Search:                          Command (⌘) + space
+switch app:                                Command (⌘) + Tab
+switch same app different window:          Command (⌘) + ~
+full screen mode:                          Control (⌃) + Command (⌘) + F
+open mission control:                      Control (⌃) + Up Arrow (↑)
+search in Finder:                          Command (⌘) + Option (⌥) + Space
+open system settings:                      Command (⌘) + Space, then type "System Settings"
+open activity monitor:                     Command (⌘) + Space, then type "Activity Monitor"
+open terminal:                             Command (⌘) + Space, then type "Terminal"
+show hidden files:                         Command (⌘) + Shift (⇧) + .
+Quit current app:                          Command (⌘) + Q
+Force quit an app:                         Command (⌘) + Option (⌥) + Esc
+Minimize front window:                     Command (⌘) + M
+Close front window:                        Command (⌘) + W
+Hide front app:                            Command (⌘) + H
+Show/hide Dock:                            Command (⌘) + Option (⌥) + D
+Lock screen:                               Control (⌃) + Command (⌘) + Q
+Open app settings/preferences:             Command (⌘) + ,
+```
 
 # Commands
 ```bash
