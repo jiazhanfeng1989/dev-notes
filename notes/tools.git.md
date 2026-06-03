@@ -2,7 +2,7 @@
 id: 68krwv07d88e4730egwsui9
 title: Git
 desc: ''
-updated: 1777309034523
+updated: 1780467426920
 created: 1747391620429
 ---
 
@@ -23,7 +23,7 @@ This section contains frequently used Git commands for daily development workflo
 
 ```git
 // List all configurations (system, global, and local)
-git config -l 
+git config -l
 
 // List only local repository configurations (.git/config)
 git config --local -l 
@@ -327,4 +327,17 @@ git reflog
 
 // List reflog entries for a specific branch
 git reflog show <branch-name>
+```
+
+
+## Git shrink pack command
+``` git
+// Shrink pack
+// Shrink pack force
+git gc --aggressive --force
+git prune --expire=now
+
+// Shrink pack filter-repo/BFG
+git filter-repo/BFG 
+git filter-repo --path bigfile.zip --invert-paths
 ```

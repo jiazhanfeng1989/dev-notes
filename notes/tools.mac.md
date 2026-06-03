@@ -2,7 +2,7 @@
 id: 3ow2waa14bgo01jsubc2ae3
 title: Mac
 desc: ''
-updated: 1778558747341
+updated: 1779088826247
 created: 1770346207348
 ---
 
@@ -92,6 +92,9 @@ caffeinate -dimsu -t 3600
 
 # Development Tools
 ```
+# change shell to zsh
+chsh -s /bin/zsh
+
 # install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
