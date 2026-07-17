@@ -2,7 +2,7 @@
 id: 3ow2waa14bgo01jsubc2ae3
 title: Mac
 desc: ''
-updated: 1779088826247
+updated: 1784283032482
 created: 1770346207348
 ---
 
@@ -88,6 +88,24 @@ HOMEBREW_NO_AUTO_UPDATE=1 brew install wget
 
 # Keep the computer awake for 1 hour
 caffeinate -dimsu -t 3600
+
+# Show the proxy settings
+scutil --proxy
+
+# Show the DNS settings
+scutil --dns
+
+# Show the vpn status
+scutil --nc list
+
+# Show the default route
+route -n get default
+
+# Show the routing table
+netstat -rn
+
+# Trace the route to github.com
+traceroute github.com
 ```
 
 # Development Tools
@@ -131,4 +149,7 @@ brew install orbstack
 
 # install meld
 brew install --cask meld
+
+# install tree
+brew install tree
 ```

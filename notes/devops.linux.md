@@ -2,7 +2,7 @@
 id: xlunmb0ghxcktv2dvlc87em
 title: Linux
 desc: ''
-updated: 1773713316376
+updated: 1783390091913
 created: 1764840959429
 ---
 
@@ -76,4 +76,8 @@ dd if=/dev/zero of=10GB.bin bs=1M count=10240 # 10 GB
 
 # Test download speed
 time scp user@server:/tmp/testfile ./downloaded_file
+
+# tar - create a tar archive
+tar --exclude='.DS_Store' -czf snapshot.tar.gz charger-snapshots
+tar -xvf snapshot.tar.gz
 ```
