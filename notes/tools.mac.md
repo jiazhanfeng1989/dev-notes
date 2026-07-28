@@ -2,7 +2,7 @@
 id: 3ow2waa14bgo01jsubc2ae3
 title: Mac
 desc: ''
-updated: 1784283032482
+updated: 1785203669151
 created: 1770346207348
 ---
 
@@ -118,6 +118,9 @@ chsh -s /bin/zsh
 
 # install ohmyzsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# install snapzy, native macOS screenshots, recording, annotation, and editing from the menu bar.
+curl -fsSL https://raw.githubusercontent.com/duongductrong/Snapzy/v1.30.1/install.sh | bash
 
 # configure brew
 eval "$(/opt/homebrew/bin/brew shellenv)" 

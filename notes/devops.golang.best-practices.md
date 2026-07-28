@@ -2,7 +2,7 @@
 id: ef887ao8ygjcu4sbmehvs8j
 title: Best Practices
 desc: ''
-updated: 1774409333335
+updated: 1785293202433
 created: 1757038742246
 ---
 
@@ -42,9 +42,13 @@ go tool -n goimports # Print out the path to the tool on the filesytem
 # Documents
 - [Go Language Specification](https://go.dev/ref/spec)
 - [Effective Go](https://go.dev/doc/effective_go)
+- [Go Blog](https://go.dev/blog/)
+- [Go FAQ](https://go.dev/doc/faq)
+- [Go Standard Library](https://pkg.go.dev/std)
 - [Go References](https://go.dev/doc/#references)
 - [Go Code Review Comments](https://go.dev/wiki/CodeReviewComments)
 - [Context and Structs](https://go.dev/blog/context-and-structs)
+- [Memory Model](https://go.dev/ref/mem)
 - [Go Pprof](https://go.dev/blog/pprof)
 - [Go Slog](https://go.dev/blog/slog)
 - [Go SwissTable](https://go.dev/blog/swisstable)
@@ -68,8 +72,6 @@ go tool -n goimports # Print out the path to the tool on the filesytem
 - [Go Serialization Benchmarks](https://github.com/alecthomas/go_serialization_benchmarks)
 - [Debugging performance issues in Go programs](https://go.dev/wiki/Performance)
 - [Google Go Style Guide](https://google.github.io/styleguide/go/decisions)
-- [Go FAQ](https://go.dev/doc/faq)
-- [Go Blog](https://go.dev/blog/)
 
 # Some Golang not compatible changes
 - [Loop variable preview](https://go.dev/blog/loopvar-preview)
