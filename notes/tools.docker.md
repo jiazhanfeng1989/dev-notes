@@ -2,7 +2,7 @@
 id: 2pqr9mpo11lcwdos4mxx4nj
 title: Docker
 desc: ''
-updated: 1774601627842
+updated: 1785909626745
 created: 1760420405986
 ---
 
@@ -60,5 +60,34 @@ docker system prune -a # remove all unused containers, images, volumes, and netw
 
 # Docker Stats
 docker stats # show resource usage statistics for all running containers
+```
+
+``` bash
+docker run -d \
+  --name charger-snapshot \
+  --security-opt seccomp=unconfined \            # used to fix the error: thread_create failed: Operation not permitted
+  --ulimit nproc=65535:65535 \
+  --entrypoint /go/bin/charger-cache-snapshot \
+  -v "$(pwd)/snapshot:/snapshot" \
+  -e SNAPSHOT_ROOT=/snapshot \
+  -e ELASTIC_APM_ACTIVE=false \
+  -e ENABLE_CHARGER_CACHE_PERIOD_SYNC=off \
+  -e ENABLE_CHARGER_CACHE_ELASTICSEARCH_PERSISTENCE=off \
+  -e ELASTICSEARCH_URL=http://10.189.104.139:9200 \
+  -e ELASTICSEARCH_SCHEME=http \
+  docker.io/telenav/evplanner:0.0.8608\
+  -logtostderr \
+  -v=2 \
+  -agolloEndpoint=apollo-configservice-na.stg.k8s.mypna.com \
+  -agolloAppID=NAVConfig \
+  -agolloCluster=ISR \
+  -publisher=manual \
+  -readyTimeout=36000 \
+  -evConfigKey=default
+
+
+docker logs -f charger-snapshot
+docker logs -f --tail 100 charger-snapshot
+docker rm -f charger-snapshot2 2>/dev/null
 ```
 
