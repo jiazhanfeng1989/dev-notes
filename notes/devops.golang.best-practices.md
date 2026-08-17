@@ -2,7 +2,7 @@
 id: ef887ao8ygjcu4sbmehvs8j
 title: Best Practices
 desc: ''
-updated: 1785293202433
+updated: 1786960368509
 created: 1757038742246
 ---
 
@@ -62,7 +62,6 @@ go tool -n goimports # Print out the path to the tool on the filesytem
 - [Go Configuration for Downloading Non Public Code](https://pkg.go.dev/cmd/go#hdr-Configuration_for_downloading_non_public_code)
 - [Go 101](https://go101.org/article/101.html)
 - [Go Proverbs](https://go-proverbs.github.io)
-- [Go GC Guide](https://tip.golang.org/doc/gc-guide)
 - [Golangci-lint Documentation](https://golangci-lint.run/docs/)
 - [Context Induced Performance Bottleneck in Go](https://gabnotes.org/posts/context-induced-performance-bottleneck-in-go)
 - [Go Tools Command](https://blog.howardjohn.info/posts/go-tools-command/)
@@ -72,6 +71,9 @@ go tool -n goimports # Print out the path to the tool on the filesytem
 - [Go Serialization Benchmarks](https://github.com/alecthomas/go_serialization_benchmarks)
 - [Debugging performance issues in Go programs](https://go.dev/wiki/Performance)
 - [Google Go Style Guide](https://google.github.io/styleguide/go/decisions)
+- [Go Core Dump Debugging](https://go.dev/wiki/CoreDumpDebugging)
+- [Go Diagnostics](https://go.dev/doc/diagnostics)
+- [Go GC Guide](https://go.dev/doc/gc-guide#Introduction)
 
 # Some Golang not compatible changes
 - [Loop variable preview](https://go.dev/blog/loopvar-preview)

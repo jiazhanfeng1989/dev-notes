@@ -2,7 +2,7 @@
 id: 3ow2waa14bgo01jsubc2ae3
 title: Mac
 desc: ''
-updated: 1785203669151
+updated: 1786960446220
 created: 1770346207348
 ---
 
@@ -13,6 +13,7 @@ Some tools for Mac.
 - [mole](https://github.com/tw93/mole) Deep clean and optimize your Mac.
 - [AppCleaner](https://freemacsoft.net/appcleaner/) Uninstall unwanted apps.
 - [OmniDiskSweeper](https://www.omnigroup.com/more/omnidisksweeper/) Disk space analyzer.
+- [Instruments](https://help.apple.com/instruments/mac/current/#/dev7b09c84f5) Performance analysis tool.
 
 ## Mac shortcuts
 ```
