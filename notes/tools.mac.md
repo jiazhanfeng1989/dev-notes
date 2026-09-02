@@ -2,7 +2,7 @@
 id: 3ow2waa14bgo01jsubc2ae3
 title: Mac
 desc: ''
-updated: 1786960446220
+updated: 1788340112543
 created: 1770346207348
 ---
 
@@ -156,4 +156,7 @@ brew install --cask meld
 
 # install tree
 brew install tree
+
+# install rectangle
+brew install --cask rectangle
 ```
