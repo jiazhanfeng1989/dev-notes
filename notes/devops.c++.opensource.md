@@ -2,7 +2,7 @@
 id: 9zio5f0cupqvkw4j4g1m5fx
 title: Opensource
 desc: ''
-updated: 1788424622914
+updated: 1788498915454
 created: 1752630436332
 ---
 # Description
@@ -42,10 +42,6 @@ Some of the opensource projects collected.
 
 
 # Installation
-```bash
-CMAKE_POLICY_VERSION_MINIMUM=3.5 ./bk build -t osx-dbg
-```
-
 ## spdlog installation:
 ```bash
 1. git clone --depth 1 -b v1.15.3 https://github.com/gabime/spdlog.git spdlog_1_15_3
