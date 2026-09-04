@@ -2,7 +2,7 @@
 id: nte8ivtsnx19w3t33pkcaw8
 title: Kubectl
 desc: ''
-updated: 1786002338225
+updated: 1788503385794
 created: 1786002327977
 ---
 # K8s Service Troubleshooting Guide
@@ -55,4 +55,8 @@ kubectl -n common-eu logs -l app=evplanner-eu -c evplanner --since=1h --tail=500
 
 # Aggregated logs from all Pods (with Pod name prefix)
 kubectl -n common-eu logs -l app=evplanner-eu -c evplanner --since=30m --prefix=true
+
+
+# Get events for a specific Pod
+kubectl get events -n common-hkm --field-selector involvedObject.name=evplanner-hkm-7bf6589b99-66jdd --sort-by='.lastTimestamp'
 ```
