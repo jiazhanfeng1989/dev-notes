@@ -2,7 +2,7 @@
 id: 3ow2waa14bgo01jsubc2ae3
 title: Mac
 desc: ''
-updated: 1788340112543
+updated: 1788951610760
 created: 1770346207348
 ---
 
@@ -42,6 +42,9 @@ Open app settings/preferences:             Command (⌘) + ,
 
 # Commands
 ```bash
+# Copy text to clipboard
+echo "Hello World" | pbcopy
+
 # Show the top 10 processes by memory usage
 top -l 1 -n 10 -o mem
 
