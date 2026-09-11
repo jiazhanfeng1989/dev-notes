@@ -2,7 +2,7 @@
 id: 3ow2waa14bgo01jsubc2ae3
 title: Mac
 desc: ''
-updated: 1788951610760
+updated: 1789351638184
 created: 1770346207348
 ---
 
@@ -110,6 +110,9 @@ netstat -rn
 
 # Trace the route to github.com
 traceroute github.com
+
+# Check if a port is listening
+nc -zv 127.0.0.1 8080
 ```
 
 # Development Tools

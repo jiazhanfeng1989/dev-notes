@@ -1,8 +1,8 @@
 ---
 id: wst5kzs4csxbqjw49n5wg0r
-title: Network Protocol Analyzer
+title: Tcp
 desc: ''
-updated: 1769422408081
+updated: 1789091780230
 created: 1753421918946
 ---
 # Description
@@ -15,6 +15,9 @@ Some tools to analyze network protocols.
 - [mitmproxy](https://mitmproxy.org/)
 - [postman](https://www.postman.com/)
 - [apipost](https://www.apipost.cn/)
+
+## TCP
+- [TCP/IP 协议介绍](https://mp.weixin.qq.com/s/v9MynQNYOj4SyxjW3Bg4Jw)
 
 ## Wireshark Tutorial
 - [Wireshark Changing Column Display](https://unit42.paloaltonetworks.com/unit42-customizing-wireshark-changing-column-display/)

@@ -1,8 +1,8 @@
 ---
 id: ktor4obcnpvd185zbi1hkxl
-title: Chrome Extensions
+title: Chrome
 desc: ''
-updated: 1747792973000
+updated: 1789375721362
 created: 1747737338278
 ---
 # Useful Chrome Extensions
@@ -34,3 +34,30 @@ Press + hold right mouse button (anywhere on screen):
 Press + hold left mouse button and drag link to:
 →: Open link in new tab
 ```
+
+# Chrome shortcuts
+[Chrome shortcuts](https://support.google.com/chrome/answer/157179)
+
+| Action | Shortcut |
+| ------ | -------- |
+| New tab | `⌘ + T` |
+| Close current tab | `⌘ + W` |
+| Reopen closed tab | `⌘ + Shift + T` |
+| New window | `⌘ + N` |
+| New Incognito window | `⌘ + Shift + N` |
+| Next tab | `⌘ + Option + →` |
+| Previous tab | `⌘ + Option + ←` |
+| Back | `⌘ + ←` |
+| Forward | `⌘ + →` |
+| Reload | `⌘ + R` |
+| Hard reload | `⌘ + Shift + R` |
+| Find in page | `⌘ + F` |
+| Focus address bar | `⌘ + L` |
+| Open downloads | `⌘ + Shift + J` |
+| Open history | `⌘ + Y` |
+| Open settings | `⌘ + ,` |
+| Zoom in | `⌘ + +` |
+| Zoom out | `⌘ + -` |
+| Reset zoom | `⌘ + 0` |
+| Open Developer Tools | `⌘ + Option + I` |
+| View page source | `⌘ + Option + U` |
