@@ -2,7 +2,7 @@
 id: 3ow2waa14bgo01jsubc2ae3
 title: Mac
 desc: ''
-updated: 1789351638184
+updated: 1789438514848
 created: 1770346207348
 ---
 
@@ -113,6 +113,9 @@ traceroute github.com
 
 # Check if a port is listening
 nc -zv 127.0.0.1 8080
+
+# Accept the Xcode license
+sudo xcodebuild -license accept
 ```
 
 # Development Tools
