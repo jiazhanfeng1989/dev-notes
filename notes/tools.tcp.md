@@ -2,7 +2,7 @@
 id: wst5kzs4csxbqjw49n5wg0r
 title: Tcp
 desc: ''
-updated: 1789091780230
+updated: 1789890153357
 created: 1753421918946
 ---
 # Description
@@ -30,6 +30,12 @@ Some tools to analyze network protocols.
 # mitmproxy Tutorial
 ```bash
 alias mitmp='mitmproxy --set console_mouse=false'
+```
+
+# DNS lookup
+```bash
+dig +trace example.com A
+dig @8.8.8.8 example.com A
 ```
 
 

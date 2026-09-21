@@ -2,7 +2,7 @@
 id: vluw66mcntnebm2fdvfkiay
 title: Tcpdump
 desc: ''
-updated: 1789555973852
+updated: 1789955445312
 created: 1789436788077
 ---
 
@@ -37,6 +37,8 @@ tcpdump -i eth0 -nn 'tcp and host 192.168.1.10 and port 443'
 tcpdump -i eth0 -nn 'host 192.168.1.10 and (port 80 or port 443)'
 tcpdump -i eth0 -nn -s 0 -w capture.pcap 'host 10.0.0.5 or port 53'
 
+# -B buffer size
+tcpdump -i eth0 -nn -s 0 -B 40960 -w capture.pcap 'host 192.168.1.100'
 
 # Capture DNS traffic
 tcpdump -i eth0 -nn 'udp port 53'

@@ -2,7 +2,7 @@
 id: kponeoars1ghp0o6oa1ht2z
 title: Curl
 desc: ''
-updated: 1767065309809
+updated: 1789900395783
 created: 1747964867488
 ---
 
@@ -63,6 +63,14 @@ LD_PRELOAD=/usr/lib/x86_64-linux-gnu/faketime/libfaketime.so.1 FAKETIME="2025-05
 ``` bash
 # Use curl to test the speed of a website
 curl -s -w ‘%{time_connect}###%{time_starttransfer}###%{time_total}###%{size_download}###%{speed_download}’ -X GET http://example.com
+
+curl -w '\n
+DNS解析: %{time_namelookup}s\n
+TCP连接: %{time_connect}s\n
+TLS握手: %{time_appconnect}s\n
+首字节: %{time_starttransfer}s\n
+总耗时: %{time_total}s\n' \
+-o /dev/null -s https://your.api.com
 
 for i in {1..1000};do curl -4 --location --request GET  'http://example.com'  -o /dev/null -s -w '\n%{time_namelookup}:%{time_connect}:%{time_starttransfer}:%{time_total}\n';done > /tmp/timings.log
 awk -F':' '{ sum += $1 } END { if (NR > 0) print sum / NR }' /tmp/timings.log
