@@ -2,7 +2,7 @@
 id: nte8ivtsnx19w3t33pkcaw8
 title: Kubectl
 desc: ''
-updated: 1788503385794
+updated: 1789979103256
 created: 1786002327977
 ---
 # K8s Service Troubleshooting Guide
@@ -59,4 +59,10 @@ kubectl -n common-eu logs -l app=evplanner-eu -c evplanner --since=30m --prefix=
 
 # Get events for a specific Pod
 kubectl get events -n common-hkm --field-selector involvedObject.name=evplanner-hkm-7bf6589b99-66jdd --sort-by='.lastTimestamp'
+
+# Ephemeral debug container: attach netshoot to an existing Pod for network troubleshooting
+#   -it              interactive shell
+#   --image          toolbox image (curl, dig, tcpdump, nc, etc.)
+#   --target         share the target container's process namespace (same network stack as evplanner)
+kubectl debug -it evplanner-na-6dbd944764-vrht4  --image=nicolaka/netshoot --target=evplanner -n common-na
 ```

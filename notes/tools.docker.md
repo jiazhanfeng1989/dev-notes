@@ -2,7 +2,7 @@
 id: 2pqr9mpo11lcwdos4mxx4nj
 title: Docker
 desc: ''
-updated: 1785909626745
+updated: 1790043911819
 created: 1760420405986
 ---
 
@@ -89,5 +89,11 @@ docker run -d \
 docker logs -f charger-snapshot
 docker logs -f --tail 100 charger-snapshot
 docker rm -f charger-snapshot2 2>/dev/null
+
+# Debugging container network issues with netshoot container
+docker run -it --rm \
+  --network container:<app_container> \
+  --pid container:<app_container> \
+  nicolaka/netshoot
 ```
 

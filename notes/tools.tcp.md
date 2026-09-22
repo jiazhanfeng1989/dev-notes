@@ -2,7 +2,7 @@
 id: wst5kzs4csxbqjw49n5wg0r
 title: Tcp
 desc: ''
-updated: 1789890153357
+updated: 1789967911931
 created: 1753421918946
 ---
 # Description
@@ -38,4 +38,21 @@ dig +trace example.com A
 dig @8.8.8.8 example.com A
 ```
 
+# 优化TCP性能
+```bash
+# 1. 调整内核参数
+net.ipv4.tcp_syncookies = 1          # 防SYN Flood
+net.ipv4.tcp_tw_reuse = 1            # 快速回收TIME_WAIT
+net.ipv4.tcp_fin_timeout = 30        # 减少FIN_WAIT2时间
+net.ipv4.tcp_max_syn_backlog = 8192  # 增大SYN队列
+net.core.somaxconn = 8192            # 增大Accept队列
+# 2. 启用BBR拥塞控制（推荐）
+net.core.default_qdisc = fq
+net.ipv4.tcp_congestion_control = bbr
+# 3. 调整缓冲区
+net.core.rmem_max = 134217728
+net.core.wmem_max = 134217728
+net.ipv4.tcp_rmem = 4096 87380 134217728
+net.ipv4.tcp_wmem = 4096 65536 134217728
+```
 
