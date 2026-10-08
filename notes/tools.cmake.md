@@ -2,7 +2,7 @@
 id: sw4qdrl2xa04761xg89kcmj
 title: CMake
 desc: ''
-updated: 1788492731669
+updated: 1791425575863
 created: 1788492263403
 ---
 
@@ -116,4 +116,6 @@ Other projects can then find it via:
 
 ```shell
 cmake -S . -B build -DCMAKE_PREFIX_PATH=${HOME}/cpplib/spdlog_1_15_3_custom
+CMAKE_POLICY_VERSION_MINIMUM=3.5 ./bk build -t osx-arm64-dbg
+SET(CMAKE_OSX_DEPLOYMENT_TARGET "12.0" CACHE STRING "Minimum OS X deployment version" FORCE)
 ```
