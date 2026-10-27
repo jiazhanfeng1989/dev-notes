@@ -2,7 +2,7 @@
 id: 2pqr9mpo11lcwdos4mxx4nj
 title: Docker
 desc: ''
-updated: 1790043911819
+updated: 1793270703511
 created: 1760420405986
 ---
 
@@ -39,7 +39,7 @@ docker container prune # remove all stopped containers
 docker rm -f $(docker ps -a -q --filter ancestor=<image>) # remove all containers with a specific image
 docker ps -a --filter ancestor=<image> # list all containers with specific images
 docker run -it --rm -v ~/.ssh:/root/.ssh <container_id> /bin/bash # run a container from an image with ssh shared
-docker run -it -v $SSH_AUTH_SOCK:/ssh-agent -e SSH_AUTH_SOCK=/ssh-agent <image> bash # run container with ssh shared
+docker run -it -v $SSH_AUTH_SOCK:/ssh-agent --name jzf-test -e SSH_AUTH_SOCK=/ssh-agent <image> bash # run container with ssh shared
 
 # Docker Compose
 docker compose up -d # start a container from a docker-compose.yml file
@@ -95,5 +95,11 @@ docker run -it --rm \
   --network container:<app_container> \
   --pid container:<app_container> \
   nicolaka/netshoot
+
+# Start a container from a stopped container
+docker start -ai elastic_napier
+
+# Stop a container
+docker stop <container_id>
 ```
 

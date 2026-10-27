@@ -2,7 +2,7 @@
 id: nte8ivtsnx19w3t33pkcaw8
 title: Kubectl
 desc: ''
-updated: 1789979103256
+updated: 1793347977318
 created: 1786002327977
 ---
 # K8s Service Troubleshooting Guide
@@ -64,5 +64,52 @@ kubectl get events -n common-hkm --field-selector involvedObject.name=evplanner-
 #   -it              interactive shell
 #   --image          toolbox image (curl, dig, tcpdump, nc, etc.)
 #   --target         share the target container's process namespace (same network stack as evplanner)
-kubectl debug -it evplanner-na-6dbd944764-vrht4  --image=nicolaka/netshoot --target=evplanner -n common-na
+kubectl debug -it evplanner-na-6dbd944764-vrht4 \
+  --image=nicolaka/netshoot \
+  --target=evplanner \
+  -n common-na
 ```
+
+## 2. Kubeconfig and contexts
+
+```bash
+# Merge multiple kubeconfig files into ~/.kube/config
+# KUBECONFIG: colon-separated list of files (left to right; later files override on conflict)
+KUBECONFIG=ek2s-eks-1.kubeconfig.yaml:ek2s-eks-2.kubeconfig.yaml \
+  kubectl config view --merge --flatten > /root/.kube/config
+
+# View effective config (current ~/.kube/config)
+kubectl config view
+
+# Rename a context (shorter name for daily use)
+kubectl config rename-context cluster/ek2d-eks-1 dev
+
+# Switch active cluster/namespace/user
+kubectl config use-context dev
+
+# List all contexts (* = current)
+kubectl config get-contexts
+
+# Restart a deployment, if 'imagePullPolicy: Always' is set, it will refresh the image
+kubectl -n common-eu rollout restart deployment/evplanner-eu
+```
+
+## 3 Examples
+```
+kubectl describe pod liveness-exec
+kubectl describe pod liveness-http
+
+kubectl delete pod/evplanner-na-645cbbf69b-j428l -n common-na
+kubectl exec -it evplanner-eu-7d664ffb64-x49wc -n common-eu -c evplanner -- /bin/bash
+kubectl scale deployment.apps/evplanner-eu-2499 -n common-eu --replicas=2
+
+helm rollback -n common-eu evplanner-eu --debug 45
+helm ls -a -n common-eu
+helm history -n common-na  evplanner-na
+helm uninstall evplanner-eu-denali-rainier -n common-eu
+helm get values evplanner-na -n common-na
+helm -n common-eu upgrade --install evplanner-eu ./evplanner/ -f dev_eu.yaml --set ev.tripplanner.imageag=XXX
+```
+
+## 4. k9s (terminal UI)
+[k9s](https://github.com/derailed/k9s) — interactive TUI for clusters (pods, logs, exec, port-forward). Install per repo README, then run `k9s`.
