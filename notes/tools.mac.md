@@ -2,7 +2,7 @@
 id: 3ow2waa14bgo01jsubc2ae3
 title: Mac
 desc: ''
-updated: 1789438514848
+updated: 1793843809812
 created: 1770346207348
 ---
 
@@ -78,9 +78,22 @@ brew list --cask
 # Show all installed packages with versions
 brew list --versions
 
+
+# Show the outdated packages
+brew outdated
+
+# Install python@3.11
 brew install python@3.11
 
+# Show the information of geos
 brew info geos
+
+# Upgrade geos
+brew upgrade geos
+
+# Clean up the brew cache
+brew cleanup --dry-run
+brew cleanup
 
 # Disable brew auto update
 echo 'export HOMEBREW_NO_AUTO_UPDATE=1' >> ~/.zshrc
