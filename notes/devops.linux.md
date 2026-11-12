@@ -2,7 +2,7 @@
 id: xlunmb0ghxcktv2dvlc87em
 title: Linux
 desc: ''
-updated: 1783390091913
+updated: 1794474178789
 created: 1764840959429
 ---
 
@@ -80,4 +80,8 @@ time scp user@server:/tmp/testfile ./downloaded_file
 # tar - create a tar archive
 tar --exclude='.DS_Store' -czf snapshot.tar.gz charger-snapshots
 tar -xvf snapshot.tar.gz
+
+
+# Start a simple HTTP server to share files
+python3 -m http.server 8080 --bind 0.0.0.0 --directory ~/report-share
 ```
