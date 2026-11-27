@@ -2,7 +2,7 @@
 id: 2pqr9mpo11lcwdos4mxx4nj
 title: Docker
 desc: ''
-updated: 1793270703511
+updated: 1795759073076
 created: 1760420405986
 ---
 
@@ -75,7 +75,7 @@ docker run -d \
   -e ENABLE_CHARGER_CACHE_ELASTICSEARCH_PERSISTENCE=off \
   -e ELASTICSEARCH_URL=http://10.189.104.139:9200 \
   -e ELASTICSEARCH_SCHEME=http \
-  docker.io/telenav/evplanner:0.0.8608\
+  docker.io/evplanner:0.0.8608\
   -logtostderr \
   -v=2 \
   -agolloEndpoint=apollo-configservice-na.stg.k8s.mypna.com \

@@ -2,7 +2,7 @@
 id: wzmkncsveutbt72t9rffufr
 title: Mapdisplay
 desc: ''
-updated: 1795498806716
+updated: 1795659167385
 created: 1795052157233
 ---
 # 1. Overview
@@ -600,3 +600,7 @@ After M4 and M7, you have the baseline skills to start working on MapDisplay.
 - [Google Interactive Polyline Utility](https://developers.google.com/maps/documentation/utilities/polylineutility)
 - [Natural Earth](https://www.naturalearthdata.com/) free vector and raster map data
 - [QGIS](https://www.qgis.org/)
+- [Mapbox：Vector tiles introduction](https://docs.mapbox.com/data/tilesets/guides/vector-tiles-introduction/)
+- [Vector Tile Specification](https://github.com/mapbox/vector-tile-spec/blob/master/2.1/README.md)
+- [Protocol Buffers: Encoding](https://protobuf.dev/programming-guides/encoding/)
+- [Martin Tile Server](https://maplibre.org/martin/)
